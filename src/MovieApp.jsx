@@ -7,7 +7,7 @@ export const MovieApp = () => {
   const [movieList, setMovieList] = useState(null)
 
   const urlBase = 'https://api.themoviedb.org/3/search/movie'
-  const API_KEY = '1c767dd6b7ac09e8fdf4181ce9f12982'
+  const API_KEY = 'API_KEY'
 
   const handleInputChange = ({ target }) => {
     setSearch(target.value)
@@ -18,7 +18,7 @@ export const MovieApp = () => {
     event.preventDefault()
     fetchMovies()
 
-  }
+  } 
 
   const fetchMovies = async () => {
     try {
